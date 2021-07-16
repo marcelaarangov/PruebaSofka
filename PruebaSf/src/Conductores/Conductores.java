@@ -12,6 +12,8 @@ package Conductores;
 // Constructor Clase Conductores
 public class Conductores {
     int idConductor, Puntaje; 
+
+   
     String Nombre;
     
 

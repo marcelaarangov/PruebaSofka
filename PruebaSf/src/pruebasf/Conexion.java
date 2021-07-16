@@ -15,7 +15,7 @@ import java.sql.Statement;
  * @author Home
  */
 public class Conexion {
-    Connection con;
+    public Connection con;
     public Conexion() {
         
         try {
@@ -26,18 +26,7 @@ public class Conexion {
         }
     }
     public static void main(String[] args) {
-        Conexion cn = new Conexion();
-        Statement st;
-        ResultSet rs;
-        try {
-            st = cn.con.createStatement();
-            rs = st.executeQuery("select * from Conductores");
-            while (rs.next()) {
-                System.out.println(rs.getInt("idConductor") + " " + rs.getString("Nombre"));
-            }
-            cn.con.close();
-        } catch (Exception e) {
-        }
+        
 
      
     }
