@@ -8,6 +8,15 @@ package Carros;
 // Constructor Clase Carros
 public class Carros {
     int idCarro, Conductor, Posicion, Distancia, Juego;
+    String Nombre;
+
+    public Carros(int idCarro, String Nombre) {
+        this.idCarro = idCarro;
+        this.Nombre = Nombre;
+    }
+
+    
+    
 
     public int getIdCarro() {
         return idCarro;
@@ -48,4 +57,9 @@ public class Carros {
     public void setJuego(int Juego) {
         this.Juego = Juego;
     }
+    
+    public void LanzarDado() {
+        Distancia = Distancia + (((int) (Math.random() * 5 + 1))*100);
+    }
+
 }

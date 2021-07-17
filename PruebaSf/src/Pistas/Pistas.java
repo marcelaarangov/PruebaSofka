@@ -1,4 +1,3 @@
-
 package Pistas;
 
 /**
@@ -7,7 +6,14 @@ package Pistas;
  */
 // Constructor Clase Pistas
 public class Pistas {
+
     int idPista, LimiteKm, NumCarriles;
+
+    public Pistas(int idPista, int LimiteKm, int NumCarriles) {
+        this.idPista = idPista;
+        this.LimiteKm = LimiteKm;
+        this.NumCarriles = NumCarriles;
+    }
 
     public int getIdPista() {
         return idPista;
@@ -32,5 +38,5 @@ public class Pistas {
     public void setNumCarriles(int NumCarriles) {
         this.NumCarriles = NumCarriles;
     }
-    
+
 }

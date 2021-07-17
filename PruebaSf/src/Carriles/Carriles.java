@@ -9,6 +9,14 @@ package Carriles;
 public class Carriles {
     int idCarril, Carro, Juego, Pista;
 
+    public Carriles(int idCarril, int Carro, int Juego, int Pista) {
+        this.idCarril = idCarril;
+        this.Carro = Carro;
+        this.Juego = Juego;
+        this.Pista = Pista;
+    }
+    
+
     public int getIdCarril() {
         return idCarril;
     }

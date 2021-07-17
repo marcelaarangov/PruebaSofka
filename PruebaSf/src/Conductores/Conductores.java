@@ -11,11 +11,16 @@ package Conductores;
  */
 // Constructor Clase Conductores
 public class Conductores {
-    int idConductor, Puntaje; 
 
-   
+    int idConductor, Puntaje;
+
     String Nombre;
-    
+
+    public Conductores(int id, String Nombre) {
+        this.idConductor = id;
+        this.Puntaje = 0;
+        this.Nombre = Nombre;
+    }
 
     public int getIdConductor() {
         return idConductor;

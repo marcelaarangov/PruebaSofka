@@ -4,8 +4,7 @@ Ejectutar en el orden que se presenta.
 -- Creación de la tabla "Conductores"
 
 CREATE TABLE Conductores (idConductor INT (5) NOT NULL AUTO_INCREMENT, 
-			Nombre VARCHAR (45) NOT NULL, 
-			Documento INT (20), 
+			Nombre VARCHAR (45) NOT NULL,  
 			Puntaje SMALLINT (5), 
 			PRIMARY KEY (IdConductor));
 
